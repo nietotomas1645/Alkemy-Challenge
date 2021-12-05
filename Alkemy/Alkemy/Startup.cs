@@ -32,6 +32,9 @@ namespace Alkemy
             //injeccion de dependencias dbcontext
             
             services.AddDbContext<DisneyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conexion")));
+
+           
+       
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

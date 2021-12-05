@@ -21,7 +21,7 @@ namespace Alkemy.Controllers
         }
 
 
-        //-------------------------------------------MOSTRAR PELICULAS-----------------------------------------------
+        //-------------------------------------------MOSTRAR PELICULAS-----------------------------------------------  FUNCIONA
         [HttpGet]
         [Route("/movies")]
 
@@ -52,11 +52,11 @@ namespace Alkemy.Controllers
 
         }
 
-        //-------------------------------------------CREAR PELICULA-----------------------------------------------
+        //-------------------------------------------CREAR PELICULA----------------------------------------------- FUNCIONA
 
         [HttpPost]
-        [Route("movies/addMovies")]
-        [Authorize]
+        [Route("movies/addMovie")]
+        
         public ActionResult<ApiResponse> Post([FromBody] Pelicula p)
         {
             var resultado = new ApiResponse();
@@ -77,12 +77,10 @@ namespace Alkemy.Controllers
             return resultado;
         }
 
-        //-------------------------------------------MODIFICAR PELICULA-----------------------------------------------
+        //-------------------------------------------MODIFICAR PELICULA-----------------------------------------------   FUNCIONA
 
+        [HttpPut("/movies/updateMovie")]
 
-        [HttpPut]
-        [Route("/movies/updateMovies")]
-        [Authorize]
         public ActionResult<ApiResponse> Update([FromBody] Pelicula p)
         {
             var resultado = new ApiResponse();
@@ -105,12 +103,11 @@ namespace Alkemy.Controllers
             return resultado;
         }
 
-        //-------------------------------------------ELIMINAR PELICULA-----------------------------------------------
+        //-------------------------------------------ELIMINAR PELICULA----------------------------------------------- FUNCIONAAA
 
 
-        [HttpDelete]
-        [Route("/movies/delete")]
-        [Authorize]
+        [HttpDelete("/movies/deleteMovie/{id}")]
+
         public ActionResult<ApiResponse> Delete(int id)
         {
             var resultado = new ApiResponse();
@@ -121,13 +118,14 @@ namespace Alkemy.Controllers
                 context.SaveChanges();
 
                 resultado.Ok = true;
-                resultado.Return = context.Peliculas.ToList();
+                resultado.Return = context.Peliculas.ToList();         
+
                 return resultado;
             }
             catch (System.Exception ex)
             {
                 resultado.Ok = false;
-                resultado.Error = "Pelicula no encontrada" + ex.Message;
+                resultado.Error = "Error no controlado" + ex.Message;
 
                 return resultado;
             }

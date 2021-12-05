@@ -8,7 +8,7 @@ namespace Alkemy.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int IdPelicula { get; set; }
+        public int? IdPelicula { get; set; }
 
         public string Titulo { get; set; }
 
