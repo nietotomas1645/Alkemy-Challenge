@@ -38,3 +38,11 @@ D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\runt
 D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\obj\Debug\netcoreapp3.1\Alkemy.csproj.CopyComplete
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Estudio\alkemyApi\Alkemy-Challenge\Alkemy\Alkemy\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

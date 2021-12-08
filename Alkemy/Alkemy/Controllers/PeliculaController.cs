@@ -22,9 +22,9 @@ namespace Alkemy.Controllers
 
 
         //-------------------------------------------MOSTRAR PELICULAS-----------------------------------------------  FUNCIONA
-        [HttpGet]
-        [Route("/movies")]
-
+        
+        [HttpGet("/movies")]
+        
         public ActionResult<ApiResponse> Get()
         {
             var response = new ApiResponse();
@@ -54,8 +54,8 @@ namespace Alkemy.Controllers
 
         //-------------------------------------------CREAR PELICULA----------------------------------------------- FUNCIONA
 
-        [HttpPost]
-        [Route("movies/addMovie")]
+        
+        [HttpPost("movies/addMovie")]
         
         public ActionResult<ApiResponse> Post([FromBody] Pelicula p)
         {
